@@ -68,9 +68,13 @@ localhost:3000/ 运行的就是app.js这个文件。
 
 --------------------------------------------------------------------
 npm install mongoose --save
+npm install jsonwebtoken --save
+npm install ajv --save
+npm install ajv-errors --save
 
-这个template可以有连接mongoose，用user signup 功能。
+这个template可以有连接mongoose，有user signup signin功能。登录验证,post的数据验证
 以后就不用再从头搭建了。
+
 
 
 --------------------------------------------------------------------------------------

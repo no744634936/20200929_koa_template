@@ -4,11 +4,11 @@ const docrypto=require("../myTool/cryp.js")
 
 class UserModel{
     //增
-    create_user=async(firstName,lastName,hash_password,email)=>{
+    create_user=async(firstName,lastName,password,email)=>{
         let newRecord=new Users({
             firstName,
             lastName,
-            hash_password:docrypto(hash_password),
+            password:docrypto(password),
             email,
             userName:Math.random().toString(),
             avatar:DEFAULT_USER_AVATAR,
