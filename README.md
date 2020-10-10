@@ -87,3 +87,28 @@ npm run prd
 
 npm start
 
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+前端部分
+
+建立客户端，客户端连接后台
+
+npx create-react-app client
+
+在client/packag.json文件中像下面这样更改client的port :
+
+"start": "SET PORT=5500 && react-scripts start",
+
+如何让server跟client 一起运行。
+
+cd 到server文件夹下，
+
+npm install concurrently --save
+
+然后在server/package.json文件里面写上这两句
+
+"client": "npm start --prefix ../client",
+
+"both": "concurrently "npm run dev" "npm run client""
+
+然后 在server文件夹下 npm run both 就可以同时打开，server 跟client 两个服务器。
+
