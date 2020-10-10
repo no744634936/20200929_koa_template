@@ -94,9 +94,11 @@ npm start
 
 npx create-react-app client
 
-在client/packag.json文件中像下面这样更改client的port :
+在client/packag.json文件中像下面这样更改client的port 并添加proxy
 
 "start": "SET PORT=5500 && react-scripts start",
+
+"proxy": "http://localhost:3000"
 
 如何让server跟client 一起运行。
 
