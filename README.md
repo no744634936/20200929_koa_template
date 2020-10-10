@@ -115,7 +115,6 @@ npm install concurrently --save
 然后 在server文件夹下 npm run both 就可以同时打开，server 跟client 两个服务器。
 ---------------------------------
 
-npm install react-bootstrap bootstrap
-
 npm install react-router-dom
 
+npm install redux react-redux redux-thunk
