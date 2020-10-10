@@ -113,4 +113,7 @@ npm install concurrently --save
 "both": "concurrently "npm run dev" "npm run client""
 
 然后 在server文件夹下 npm run both 就可以同时打开，server 跟client 两个服务器。
+---------------------------------
+
+npm install react-bootstrap bootstrap
 
