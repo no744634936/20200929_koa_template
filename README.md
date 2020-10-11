@@ -118,3 +118,5 @@ npm install concurrently --save
 npm install react-router-dom
 
 npm install redux react-redux redux-thunk
+
+npm install axios
